@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">My Timer</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="_00_00_000">00:00:000</string>
+    <string name="stop1">Stop</string>
+    <string name="pause1">Pause</string>
+    <string name="start1">Start</string>
 </resources>
