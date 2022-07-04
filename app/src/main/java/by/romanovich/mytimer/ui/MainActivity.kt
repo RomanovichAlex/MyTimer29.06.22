@@ -37,25 +37,12 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        binding.buttonStart1.setOnClickListener {
-            stopwatchModel.start(TIMER_1)
-        }
-        binding.buttonPause1.setOnClickListener {
-            stopwatchModel.pause(TIMER_1)
-        }
-        binding.buttonStop1.setOnClickListener {
-            stopwatchModel.stop(TIMER_1)
-        }
-
-        binding.buttonStart2.setOnClickListener {
-            stopwatchModel.start(TIMER_2)
-        }
-        binding.buttonPause2.setOnClickListener {
-            stopwatchModel.pause(TIMER_2)
-        }
-        binding.buttonStop2.setOnClickListener { stopwatchModel.stop(TIMER_2) }
-
-    }
+        binding.buttonStart1.setOnClickListener { stopwatchModel.start(TIMER_1) }
+        binding.buttonPause1.setOnClickListener { stopwatchModel.pause(TIMER_1) }
+        binding.buttonStop1.setOnClickListener { stopwatchModel.stop(TIMER_1) }
+        binding.buttonStart2.setOnClickListener { stopwatchModel.start(TIMER_2) }
+        binding.buttonPause2.setOnClickListener { stopwatchModel.pause(TIMER_2) }
+        binding.buttonStop2.setOnClickListener { stopwatchModel.stop(TIMER_2) } }
 
     companion object {
         const val TIMER_1 = 1

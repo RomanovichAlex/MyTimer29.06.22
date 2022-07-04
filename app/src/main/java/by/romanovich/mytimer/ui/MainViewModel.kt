@@ -12,9 +12,15 @@ class MainViewModel(
     private val liveData: MutableLiveData<Pair<Int, String>> = MutableLiveData()
 ) : ViewModel() {
 
+
+
+
+
+
     companion object {
         const val UPDATE_TIMER = 20L
     }
+
 
     private val scope = CoroutineScope(Dispatchers.Main + SupervisorJob())
     private val jobs: MutableMap<Int, Job?> = mutableMapOf()

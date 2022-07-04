@@ -5,7 +5,6 @@ import by.romanovich.mytimer.domain.TimestampProvider
 class ElapsedTimeCalculator(
     private val timestampProvider: TimestampProvider,
 ) {
-
     fun calculate(state: StopwatchState.Running): Long {
         val currentTimestamp = timestampProvider.getMilliseconds()
         val timePassedSinceStart = if (currentTimestamp > state.startTime) {
